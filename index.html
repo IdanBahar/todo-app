@@ -6,10 +6,10 @@
     <title>Todo-App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body onload="onInit()">
+<body onload="app.onInit()">
     <h1>Todo-List</h1>
-    <input type="text" id="todo-input" placeholder="Add a new todo">
-    <button id="add-todo">Add Todo</button>
+    <input type="text" class="todo-input" placeholder="Add a new todo">
+    <button id="add-todo" onclick="app.onAddTodo()">Add Todo</button>
     <ul class="todo-list"></ul>
 
     <script type="module" src="js/app.controller.js"></script>
